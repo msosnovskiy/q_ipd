@@ -1,6 +1,6 @@
 .contacts__content {
   padding: 45px;
-  background: #009966;
+  background: var(--accent);
   display: flex;
   flex-direction: column;
   justify-content: center;

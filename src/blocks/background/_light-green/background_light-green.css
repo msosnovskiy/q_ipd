@@ -9,7 +9,7 @@
   top: 0;
   left: -120px;
   z-index: -1;
-  background-color: #F0F5F3;
+  background-color: var(--green-10);
 }
 
 @media screen and (max-width:1200px) {

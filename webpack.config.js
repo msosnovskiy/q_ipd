@@ -18,17 +18,6 @@ module.exports = {
   devtool: 'eval-source-map',
   entry: {
     'index': './src/js/index.js',
-    'about': './src/js/about.js',
-    'solutions': './src/js/solutions.js',
-    'services': './src/js/services.js',
-    'news': './src/js/news.js',
-    'career': './src/js/career.js',
-    'kadry': './src/js/kadry.js',
-    'avangard-kadry': './src/js/avangard-kadry.js',
-    'avangard-accounting': './src/js/avangard-accounting.js',
-    'government-purchases': './src/js/government-purchases.js',
-    'budget': './src/js/budget.js',
-    'consolidated-reporting': './src/js/consolidated-reporting.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -93,17 +82,12 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=fonts/[name].[ext]',
-        // options: {
-        //   outputPath: './fonts',
-        //   publicPath: '../fonts'
-        // }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
-      // filename: './styles/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -122,78 +106,9 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['about'],
-      template: './src/about.html',
-      filename: 'about.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['solutions'],
-      template: './src/solutions.html',
-      filename: 'solutions.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['services'],
-      template: './src/services.html',
-      filename: 'services.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['news'],
-      template: './src/news.html',
-      filename: 'news.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['career'],
-      template: './src/career.html',
-      filename: 'career.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['kadry'],
-      template: './src/kadry.html',
-      filename: 'kadry.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['government-purchases'],
-      template: './src/government-purchases.html',
-      filename: 'government-purchases.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['budget'],
-      template: './src/budget.html',
-      filename: 'budget.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['consolidated-reporting'],
-      template: './src/consolidated-reporting.html',
-      filename: 'consolidated-reporting.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['avangard-kadry'],
-      template: './src/avangard-kadry.html',
-      filename: 'avangard-kadry.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      chunks: ['avangard-accounting'],
-      template: './src/avangard-accounting.html',
-      filename: 'avangard-accounting.html',
-    }),
     new CopyWebpackPlugin(
       [
         { from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') },
-        { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') },
-        { from: path.resolve(__dirname, 'src/js/data'), to: path.resolve(__dirname, 'dist/data') },
-        { from: path.resolve(__dirname, 'src/images/reviews'), to: path.resolve(__dirname, 'dist/images') },
         { from: path.resolve(__dirname, 'src/config'), to: path.resolve(__dirname, 'dist/') },
       ]
     ),

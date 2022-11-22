@@ -1,6 +1,7 @@
 .icon__container {
   padding: 36px;
   height: 100%;
+  margin: 40px 0;
 }
 
 @media screen and (max-width:768px) {

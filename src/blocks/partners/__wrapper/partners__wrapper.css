@@ -3,6 +3,10 @@
   border-bottom: 2px solid #dadedc;
 }
 
+.partners__wrapper:last-child {
+	border-right: 0;
+}
+
 .partners__wrapper:nth-child(1) {
   -ms-grid-column: 1;
 	-ms-grid-row: 1;
@@ -10,7 +14,8 @@
 
 .partners__wrapper:nth-child(2) {
 	-ms-grid-column: 3;
-	-ms-grid-row: 1;}
+	-ms-grid-row: 1;
+}
 
 .partners__wrapper:nth-child(3) {
 	-ms-grid-column: 5;
