@@ -1,0 +1,28 @@
+.typical__list {
+  font-weight: normal;
+  margin: 12px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.typical__list::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #009966;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+  position: absolute;
+}
+
+.typical__list_double {
+  padding-left: 48px;
+  margin: 6px 0;
+}
+
+.typical__list_double::before {
+  background-color: transparent;
+  border: 2px solid #009966;
+  left: 24px;
+}

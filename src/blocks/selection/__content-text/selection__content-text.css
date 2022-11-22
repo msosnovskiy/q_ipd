@@ -1,0 +1,7 @@
+.selection__content-text {
+  margin: 12px auto 6px;
+}
+
+.selection__content-text:first-of-type {
+  margin-top: 0;
+}

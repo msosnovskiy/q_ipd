@@ -1,0 +1,10 @@
+.icon__container {
+  padding: 36px;
+  height: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .icon__container {
+    padding: 16px;
+  }
+}

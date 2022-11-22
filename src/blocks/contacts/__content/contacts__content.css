@@ -1,0 +1,24 @@
+.contacts__content {
+  padding: 45px;
+  background: #009966;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -ms-grid-column: 3;
+	-ms-grid-row: 1;
+
+}
+
+@media screen and (max-width:650px) {
+  .contacts__content {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .contacts__content {
+    padding: 40px 20px;
+  }
+}

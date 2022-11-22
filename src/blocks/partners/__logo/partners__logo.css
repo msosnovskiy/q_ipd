@@ -1,0 +1,8 @@
+.partners__logo {
+  max-width: 234px;
+  max-height: 48px;
+  width: 100%;
+  height: initial;
+  object-fit: contain;
+  cursor: pointer;
+}

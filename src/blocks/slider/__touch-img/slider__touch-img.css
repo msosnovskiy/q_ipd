@@ -1,0 +1,53 @@
+@keyframes anim-scroll-point { 
+  0% { 
+    transform: translateX(20px) scale(1.4); opacity: 0;
+  } 
+  10% {
+     transform: translateX(20px) scale(1.4); opacity: 1;
+    } 
+  20%, 60% { 
+    transform: translateX(40px) scale(1); opacity: 1;
+    } 
+  80% {
+    transform: translateX(-10px) scale(1); opacity: 1;
+  }
+  to { 
+    transform: translateX(-10px) scale(1); opacity: 0;
+  } 
+} 
+
+.slider__touch-img {
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 0 44px 12px auto;
+  border-radius: 50%;
+  background-color: rgb(122, 122, 122);
+  animation: anim-scroll-point 2s infinite;
+  display: none;
+  position: relative;
+}
+
+.slider__touch-img::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  /* background-color: rgba(219, 219, 219, 0.2); */
+  background-color: rgba(202, 202, 202, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+@media screen and (max-width:680px) {
+  .slider__touch-img_customers  {
+    display: block;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .slider__touch-img_reviews  {
+    display: block;
+  }
+}

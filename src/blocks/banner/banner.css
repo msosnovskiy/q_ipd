@@ -1,0 +1,8 @@
+@import url(./__text/banner__text.css);
+
+.banner {
+  display: flex;
+  align-items: center;
+  /* only IE */
+  height: 544px;
+}

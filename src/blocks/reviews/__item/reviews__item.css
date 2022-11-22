@@ -1,0 +1,32 @@
+.reviews__item {
+  margin: 32px 20px;
+  text-align: center;
+  opacity: 0.4;
+  transition: all 0.25s ease 0s;
+}
+
+.reviews__item.slick-center{
+  opacity: 1;
+  transform: scale(1.1);
+  height: auto;
+}
+
+.reviews__item.slick-center .reviews__image{
+  box-shadow: 0px 2px 4px rgba(38, 38, 38, 0.1), 0px 2px 4px rgba(38, 38, 38, 0.1);
+}
+
+@media screen and (max-width:1260px) {
+  .reviews__item {
+    opacity: 1;
+    margin: 0px 20px;
+  }
+  .reviews__item.slick-center {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:540px) {
+  .reviews__item {
+    margin: 20px;
+  }
+}
