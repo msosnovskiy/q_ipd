@@ -9,9 +9,14 @@
   align-items: center;
   cursor: default;
   cursor: pointer;
-  transition: transform .2s ease-out;
+  transition: all .3s ease-out;
 }
 
 .partners__link:hover {
-  transform: scale(1.05);
+  background-color: #F0F5F3;
 }
+/* .partners__link:hover .partners__logo{
+  transform: scale(1.05);
+} */
+
+

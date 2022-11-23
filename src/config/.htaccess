@@ -14,36 +14,3 @@ RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
 RewriteRule ^index$ index.html [NC]
 RewriteRule ^index/$ index.html [NC]
 
-RewriteRule ^about$ about.html [NC]
-RewriteRule ^about/$ about.html [NC]
-
-RewriteRule ^solutions$ solutions.html [NC]
-RewriteRule ^solutions/$ solutions.html [NC]
-
-RewriteRule ^services$ services.html [NC]
-RewriteRule ^services/$ services.html [NC]
-
-RewriteRule ^history$ history.html [NC]
-RewriteRule ^history/$ history.html [NC]
-
-RewriteRule ^career$ career.html [NC]
-RewriteRule ^career/$ career.html [NC]
-
-RewriteRule ^budget$ budget.html [NC]
-RewriteRule ^budget/$ budget.html [NC]
-
-RewriteRule ^kadry$ kadry.html [NC]
-RewriteRule ^kadry/$ kadry.html [NC]
-
-RewriteRule ^consolidated-reporting$ consolidated-reporting.html [NC]
-RewriteRule ^consolidated-reporting/$ consolidated-reporting.html [NC]
-
-RewriteRule ^government-purchases$ government-purchases.html [NC]
-RewriteRule ^government-purchases/$ government-purchases.html [NC]
-
-RewriteRule ^avangard-accounting$ avangard-accounting.html [NC]
-RewriteRule ^avangard-accounting/$ avangard-accounting.html [NC]
-
-RewriteRule ^avangard-kadry$ avangard-kadry.html [NC]
-RewriteRule ^avangard-kadry/$ avangard-kadry.html [NC]
-
